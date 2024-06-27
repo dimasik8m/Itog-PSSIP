@@ -1,0 +1,10 @@
+
+a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: green;
+    text-decoration: none;
+}

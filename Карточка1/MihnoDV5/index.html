@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Михно Дмитрий Владимирович - Вариант 5</title>
+    <style>
+        /* Стили для всего документа */
+        body {
+            background-color: yellow;
+            font-size: 13pt;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        em {
+            color: green;
+            font-style: italic;
+            text-decoration: line-through;
+        }
+        sup {
+            vertical-align: super;
+        }
+        p {
+            text-align: left;
+            color: blue;
+            font-weight: bold;
+        }
+        .hobby{
+            color: blue;
+            font-weight: bold;
+        }
+        .long-cell {
+            height: 20px; 
+        }
+        form {
+            margin: 0 auto; 
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: calc(100% - 10px); 
+            margin-bottom: 10px;
+            margin-left: 5px;
+            padding: 5px;
+        }
+        input[type="checkbox"] {
+            display: inline;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Михно Дмитрий Владимирович</h2>
+    <p>Группа: ПЗТ-38 <em>курс</em><sup>3</sup></p>
+    <p class="hobby">Мои увлечения: вас не касаются </p>
+    <ol type="1" start="2">
+        <li>Зима</li>
+        <li>Весна</li>
+        <li>Лето</li>
+    </ol>
+    <img src="/images/1.jpg" style="width: 120px; height: 120px; float: left;" alt="Изображение">
+    <a href="mailto:dimasik8m@gmail.com">Адрес электронной почты</a><br>
+    <a href="#mytable">Ссылка на таблицу</a>
+    <table id="mytable">
+        <tr>
+          <td rowspan="2" style="background-color: gray;">Ромашка</td>
+          <td>Гвоздика</td>
+          <td style="background-color: black;"></td>
+        </tr>
+        <tr>
+          <td>Василек</td>
+          <td>Лилия</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="long-cell" style="background-color: gray;"></td>
+        </tr>
+    </table>
+    <!-- Форма для ввода данных -->
+    <form>
+        <label for="server">Сервер:</label>
+        <input type="text" id="server" name="server" value="192.168.0.80">
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" cols="50">Protected</textarea>
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+        <label for="remember">
+            <input type="checkbox" id="remember" name="remember">
+            Запомнить пароль
+        </label>
+        <input type="submit" value="OK">
+        <input type="reset" value="Отменить">
+    </form>
+</body>
+</html>
